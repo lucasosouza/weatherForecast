@@ -1,0 +1,21 @@
+DONE
+
+routing
+index page
+weather and forecast page
+a service that will hold the city data across pages (cityServices)
+getting the json file
+add the function to the weather page button
+printing to the screen
+
+PENDING
+
+creating a customized directive to it
+restrict the scope of the customized directive (poke holes into it)
+create functions to convert data input from json to the required format of the output
+do some formatting to look reasonably nice (bootstrap)
+
+
+MEANING
+
+halfway through
