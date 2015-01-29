@@ -40,12 +40,14 @@ weatherApp.controller('forecastController', ['$scope', '$log', '$resource', '$ht
   
   //Ajax. Needs to work with promises, since the second runs before you can retrieve data
   
+  //this function was passed later to directive searchResult
+  $scope.toData = function(date_from_ajax) {
+      return date_from_ajax * 1000
+  });
   
 }]);
 
 
-
-  
 
 //http://api.openweathermap.org/data/2.5/forecast/daily?q=London&units=metric&cnt=7\
 
