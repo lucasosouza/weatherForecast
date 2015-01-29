@@ -1,5 +1,5 @@
 weatherApp.directive("searchResult", function() {
-  
+
   return {
        templateUrl: 'directives/searchResult.html',
        replace: true,
@@ -8,5 +8,5 @@ weatherApp.directive("searchResult", function() {
             convertDate: "&"
        }
   }
-  
+
 });
