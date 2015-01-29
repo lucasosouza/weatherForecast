@@ -9,12 +9,10 @@ add the function to the weather page button
 printing to the screen
 do some formatting to look reasonably nice (bootstrap)
 creating a customized directive to it
-
-PENDING
-
 restrict the scope of the customized directive (poke holes into it)
 create functions to convert data input from json to the required format of the output
 
-MEANING
+PENDING
 
-halfway through
+MEANING...
+COMPLETED!!
