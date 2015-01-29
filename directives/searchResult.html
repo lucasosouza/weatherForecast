@@ -1,0 +1,11 @@
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{ convertDate({ date_to_convert: weatherData.dt }) | date: 'mediumDate' }}</h3>
+    </div>
+    <div class="panel-body">
+      <p>Day temperature: {{ weatherData.temp.day }}º C</p>
+      <p>Night temperature: {{ weatherData.temp.night }}º C</p>
+      <p>Humidity: {{ weatherData.humidity }}% </p>
+    </div>
+  </div>
+

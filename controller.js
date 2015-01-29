@@ -31,21 +31,22 @@ weatherApp.controller('forecastController', ['$scope', '$log', '$resource', '$ht
   }
 
   //retrieve data from a promise
-  $scope.weatherPromise = $scope.getWeather();	
-  $scope.weatherPromise.then (function (result) {
+  $scope.getWeather().then(function (result) {
     $scope.city_retrieved = result.city.name
     $scope.temperatures = result.list
-    $log.log($scope.temperatures);    
+    //$log.log($scope.temperatures);    
   });
   
   //Ajax. Needs to work with promises, since the second runs before you can retrieve data
   
+  //this function was passed later to directive searchResult
+  $scope.toData = function(date_from_ajax) {
+      return date_from_ajax * 1000
+  }
   
 }]);
 
 
-
-  
 
 //http://api.openweathermap.org/data/2.5/forecast/daily?q=London&units=metric&cnt=7\
 
